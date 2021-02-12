@@ -18,8 +18,8 @@ btn.addEventListener('click', () => {
 * When the list item is clicked, delete it from DOM. 
 */
 list.addEventListener('click', e => {
-    if(e.target.tagName == 'LI'){
-        e.target.remove();
+    if(e.target.tagName == 'I'){
+        e.target.parentElement.remove();
     }
 });
 
@@ -29,7 +29,15 @@ list.addEventListener('click', e => {
 form.addEventListener('submit', e => {
     e.preventDefault(); // Prevent page reload on submission.
 
-    const li = document.createElement('li');
-    li.innerText = String(form.task.value);
-    list.append(li);
+    //const li = document.createElement('li');
+    //li.innerText = String(form.task.value);
+    const li = `
+    <div class="list-item">
+            
+            <li>${form.task.value}</li>
+            <i class="fas fa-trash-alt"></i>
+    </div>
+    `;
+    list.innerHTML += li;
+    form.reset();
 });
