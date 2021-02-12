@@ -16,7 +16,7 @@ ul{
     padding: 20px;
 }
 
-li {
+.list-item {
     border: 2px solid #727272;
     border-radius: 5px;
     margin: 5px;
@@ -24,6 +24,7 @@ li {
     list-style: none;
     font-size: 1.2em;
     line-height: 1.3em;
+    display: flex;
 }
 
 #task {
