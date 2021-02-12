@@ -1,0 +1,46 @@
+body{
+    width: 60%;
+    margin: auto;
+    text-align: center;
+}
+
+h2{
+    text-transform: uppercase;
+    background-color: blue;
+    padding: 20px;
+    color: bisque;
+}
+
+ul{
+    background-color: bisque;
+    padding: 20px;
+}
+
+li {
+    border: 2px solid #727272;
+    border-radius: 5px;
+    margin: 5px;
+    padding: 10px;
+    list-style: none;
+    font-size: 1.2em;
+    line-height: 1.3em;
+}
+
+#task {
+    border: 2px solid blue;
+    border-radius: 15px;
+    margin: 5px;
+    padding: 10px;
+    font-size: 1.1em;
+    width: 80%;
+}
+
+.add {
+    background-color: blue;
+    padding: 10px 20px;
+    border-radius: 50px;
+    border: none;
+    color: burlywood;
+    font-size: 1.2em;
+}
+
